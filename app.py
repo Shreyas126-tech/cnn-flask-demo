@@ -8,7 +8,7 @@ def abc():
     return render_template('abc.html')
 @app.route('/<name>')
 def name(name):
-    return render_template('name.html',name=name)
+    return render_template('name.html',name=name,image=name+".png")
 
 if __name__ == '__main__':
     app.run(debug=True)
